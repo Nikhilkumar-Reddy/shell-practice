@@ -16,3 +16,6 @@ echo "Hello Schell Scripting"
 #if you want to take the latest code if some other pushed. 
 # if its first time use git clone < Complete .git link > so you will get latest code.
 # from second time if you want to get latest code just use command (git pull)
+
+#If you want to run all th command in same line while you push the code from workplace to remote origin 
+# git add . ; git commit - m "Updated content" ; git push origin main 
