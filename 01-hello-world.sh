@@ -19,3 +19,6 @@ echo "Hello Schell Scripting"
 
 #If you want to run all th command in same line while you push the code from workplace to remote origin 
 # git add . ; git commit - m "Updated content" ; git push origin main 
+
+
+#To check the code results use command ( sh <filename> S)
