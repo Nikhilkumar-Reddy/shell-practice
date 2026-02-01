@@ -13,4 +13,6 @@ echo "Hello Schell Scripting"
 # Now commit for loca repo ( git commit -m "you pushed the latest code")
 # still the code in local repo from here to remote origin (git push origin main)
 
-
+#if you want to take the latest code if some other pushed. 
+# if its first time use git clone < Complete .git link > so you will get latest code.
+# from second time if you want to get latest code just use command (git pull)
