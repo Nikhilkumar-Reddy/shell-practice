@@ -25,3 +25,7 @@ echo "Hello Schell Scripting"
 
 
 #To check the code results use command ( sh <filename> S)
+
+
+
+Notes On Schell Scripting : 
