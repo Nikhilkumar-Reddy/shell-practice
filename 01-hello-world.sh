@@ -18,13 +18,37 @@ echo "Hello Schell Scripting"
 
 #if you want to take the latest code if some other pushed. 
 # if its first time use git clone < Complete .git link > so you will get latest code.
-# from second time if you want to get latest code just use command (git pull)
 
 #If you want to run all th command in same line while you push the code from workplace to remote origin 
 # git add . ; git commit - m "Updated content" ; git push origin main 
 
+# inside linux os, First go to root user ( )
+
+# [ec2-user@ip-172-31-17-253 ~]$ pwd
+# /home/ec2-user
+# [ec2-user@ip-172-31-17-253 ~]$ sudo su
+# [root@ip-172-31-17-253 ec2-user]# 
+
+# [root@ip-172-31-17-253 ec2-user]# sudo yum update -y 
+
+# 🖥️ Install Git on Amazon Linux
+# - Update your system:
+# sudo yum update -y
+# - Install Git:
+# sudo yum install git -y
+# - Verify installation:
+# git --version
+
+#[root@ip-172-31-17-253 ec2-user]# git clone https://github.com/Nikhilkumar-Reddy/shell-practice.git
+
+# so that you will get all necessary code from git hub portal to your latest linux os server. #
+
+# from second time if you want to get latest code just use command (git pull)
+
+
 
 #To check the code results use command ( sh <filename> S)
+
 
 
 # Notes on Schell Scripting :
