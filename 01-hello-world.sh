@@ -27,5 +27,6 @@ echo "Hello Schell Scripting"
 #To check the code results use command ( sh <filename> S)
 
 
+# Notes on Schell Scripting :
 
-Notes On Schell Scripting : 
+Functions : Funstions are intended to complete specific task, it takes input and does the job.

@@ -1,0 +1,64 @@
+
+
+ssh -i daws-07 ec2-user@54.237.199.
+
+Once you launch the instance with the existing security groups and keys values
+Go to git bash and open it and go to the place where you store or downloadedthe key values.
+
+Asi Roja@momdad MINGW64 ~
+$ cd Nikhil
+
+Asi Roja@momdad MINGW64 ~/Nikhil
+$ cd Devops
+
+
+Asi Roja@momdad MINGW64 ~/Nikhil/Devops
+$ mkdir daws-07
+
+Asi Roja@momdad MINGW64 ~/Nikhil/Devops
+$ cd daws-07
+
+Asi Roja@momdad MINGW64 ~/Nikhil/Devops/daws-07
+$ ssh-keygen -f daws-07
+
+Generating public/private ed25519 key pair.
+
+Asi Roja@momdad MINGW64 ~/Nikhil/Devops/daws-07
+$ ssh -i daws-07 ec2-user@54.237.199.35  ( here you need to give instance public ip address )
+
+The authenticity of host '54.237.199.35 (54.237.199.35)' can't be established.
+ED25519 key fingerprint is SHA256:6OOuMVe4x26rwrekqg5kfGPkhkK5WqHL1ZrpvMcqwtM.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '54.237.199.35' (ED25519) to the list of known hosts.
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-172-31-19-184 ~]$ exit
+logout
+Connection to 54.237.199.35 closed.
+
+
+
+
+
+
+
+mv    - > Move or rename of the file
+Wget  - > Is mailny used to download the packages
+curl  - > Is mainly used to view the output on the screen  but it will not download by default
+Curl is used to call the API calls
+grep   - > used to search the content inside a file  ( grep < word to search> <in which file> ) 
+
+grep -n user user.txt - > at which lines user is present in file user.txt
+grep -i user user.txt -> case sensitive ( Lower / upper case letters treated as same)
+grep -c user user.txt  - > How many lines user was present in user.txt
+grep user user.txt - > shows the lines where user content is there
+grep -v user user.txt - > in which line user content is not present in user.txt file
