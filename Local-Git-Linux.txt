@@ -3,7 +3,6 @@
 #The above command is called shebang, it is an interpreter of the code in shell scripting that check and compiles for errors
 
 # In shell scripting echo is used to print the statments. 
-echo "Hello Schell Scripting"
 
 #Once code was successfully return you would like to push the code to github right ? Currently your code in workplace.
 # from workplace - > stagging area/temp area (add) - > local repo ( commit) - > Git main/ remote (push) 
