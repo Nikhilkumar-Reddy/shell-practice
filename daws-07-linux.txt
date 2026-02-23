@@ -1,3 +1,4 @@
+________________________________
 Launch Instance and Linux OS.
 _______________________________
 
@@ -48,7 +49,7 @@ Connection to 54.237.199.35 closed.
 
 
 
-
+-----------------------------------
 Absolute Path to Login into Linux : 
 -----------------------------------
 1. Asi Roja@momdad MINGW64 ~
@@ -59,24 +60,29 @@ $ pwd
 $ ssh -i Nikhil/Devops/daws-07/daws-07 ec2-user@18.212.254.205
 Last login: Sun Feb 22 14:35:43 2026 from 205.254.168.4
 
+---------------
 user Access :
+---------------
 [ec2-user@ip-172-31-26-241 ~]$
 [ec2-user@ip-172-31-26-241 ~]$ pwd
 /home/ec2-user
-
+--------------------------
 Adminstration Access : 
+--------------------------
 [ec2-user@ip-172-31-26-241 ~]$ sudo su
 [root@ip-172-31-26-241 ec2-user]#
 [root@ip-172-31-26-241 ec2-user]# pwd
 /home/ec2-user
 
+--------------
 Root Access :
+--------------
 [root@ip-172-31-26-241 ec2-user]# sudo su -
 Last login: Sun Feb 22 14:54:26 UTC 2026 on pts/2
 [root@ip-172-31-26-241 ~]# pwd
 /root
 
-
+---------------------------
 Copy Files into Directory: 
 ----------------------------
 
@@ -99,6 +105,7 @@ Devops  Nikhil.txt  aws  copy.txt  testing.txt
 Jenkins  aws  copy.txt
 [ec2-user@ip-172-31-26-241 Devops]$
 
+-----------------------------------------
 Copy files in same path with txt files :
 -----------------------------------------
 
@@ -113,6 +120,7 @@ Copied file will be moving to other path destination as well
 Copied file will be moving to other path destination as well
 [ec2-user@ip-172-31-26-241 ~]$
 
+-----------------------------
 Moving Files into Directory : 
 -----------------------------
 
@@ -126,6 +134,7 @@ Devops  aws  copy.txt  testing.txt
 Jenkins  Nikhil.txt  aws  copy.txt
 [ec2-user@ip-172-31-26-241 Devops]$
 
+..........................
 Rename the existing file :
 ..........................
 
@@ -136,6 +145,7 @@ Devops  aws  copy.txt  testing.txt
 Devops  aws  copy.txt  test.txt
 [ec2-user@ip-172-31-26-241 ~]$
 
+----------------------------------------
 Rename file and move inside directory :
 ---------------------------------------
 [ec2-user@ip-172-31-26-241 ~]$ ls
@@ -150,6 +160,8 @@ Jenkins  Nikhil.txt  aws  copy.txt  renamedtext.txt
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::
+
+---------------
 Linux Commands : 
 ---------------
 pwd - > To check which user login 
@@ -198,6 +210,7 @@ echo https://nikhil/kumar  - > awk -F "/" '{print $NF}'
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+---------------------------------
 To Learn Basic shortcuts on VIM 
 --------------------------------
 
@@ -207,7 +220,9 @@ Once file created successfully go inside it by using command as vi Text.txt
 Initially its in ESC mode, To update or insert content inside the existing file, click (i) 
 Once you have updated the content use follow command to view the line numbers , search , some additional shortcuts to access the file.
 
+-------------------------
  **Colon Operations : ** 
+ ------------------------
 
  1. :q - > To quit the file and come outside.
  2. :wq - > First save the file and later quit the file.
@@ -222,3 +237,33 @@ Once you have updated the content use follow command to view the line numbers , 
  11. :<line-number>s/<find-word>/<replace-word> - > Find word and replace it in line for first one.
  12. :<line-number>s/<find-word>/<replace-word>/g -> Find word and replace it in line for all.
  12. :%s/<find-word>/<replace-word>/g -> Search word and replace everywhere.
+
+
+--------------
+** ESC Mode **
+--------------
+
+1. gg -> takes to top of the files
+2. shift+g -> takes us to bottom of the line
+3. u -> undo 
+4. ctrl+r  -> removed
+5. dd -> deletes the lines if cursor there in line
+6. yy -> copy thr line when cursor available
+7. p -> paste below the cursor line
+8. shift+p -> Paste above the line
+
+
+-------------------------------------------------------------------------
+ Chmod 777 To provide Read , write and execute Operations for the files:
+ ------------------------------------------------------------------------
+file/directory, owner, group , others (-rw-r--r-- )
+Read - > 4 
+Write -> 2
+Execute -> 1
+
+[root@ip-172-31-26-241 shell-practice]# chmod 777 /home/ec2-user/shell-practice/*
+[root@ip-172-31-26-241 shell-practice]# ll
+total 20
+-rwxrwxrwx. 1 root root 1912 Feb 22 18:55 02-variables.sh
+-rwxrwxrwx. 1 root root 2159 Feb 22 18:55 Local-Git-Linux.txt
+-rwxrwxrwx. 1 root root 8555 Feb 22 18:55 daws-07-linux.txt
