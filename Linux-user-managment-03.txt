@@ -204,13 +204,6 @@ id: ‘Nikhil’: no such user
 
 
 
-
-
-
-
-
-
-
 1. useradd <user-name>  - > To create one user
 2. id <user-name> -> to view the created user
 3. cat /etc/passwd -> To show all the users password.
